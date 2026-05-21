@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Grundlegende Metadaten: Zeichensatz, responsive Darstellung und Seitenbeschreibung. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Startseite von fitbbz, dem Fitnessstudio am Standort BBZBL.">
+    <meta name="author" content="Batuhan">
+    <title>fitbbz | Startseite</title>
+
+</head>
+<body>
+    <!-- header kennzeichnet den sichtbaren Kopfbereich der Website. -->
+    <header>
+        <h1>fitbbz</h1>
+        <p>Das Fitnessstudio am Standort BBZBL fuer Kraft, Ausdauer und Gesundheit.</p>
+
+        <img src="../../assets/fitbbz.png" alt="fitbbz" height="200" width="320">
+
+        <!-- nav wird fuer die Hauptnavigation verwendet, damit die Seitenstruktur klar erkennbar ist. -->
+        <nav aria-label="Hauptnavigation">
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="trainingsangebot.html">Trainingsangebot</a></li>
+                <li><a href="studio.html">Studio</a></li>
+                <li><a href="probetraining.html">Probetraining</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main enthaelt den einzigartigen Hauptinhalt dieser Seite. -->
+    <main>
+        <section aria-labelledby="ziel">
+            <h2 id="ziel">Trainieren bei fitbbz</h2>
+            <p>
+                <strong>fitbbz</strong> ist ein Fitnessstudio am Standort <strong>BBZBL</strong>.
+                Die Website informiert über Trainingsangebote, Kurse, Betreuung und Kontaktmöglichkeiten.
+            </p>
+            <p>
+                Der Webauftritt wird für die Kompetenz E3 bewusst zuerst mit <em>semantischem HTML</em>
+                aufgebaut, bevor später Gestaltung mit CSS ergänzt werden kann.
+            </p>
+        </section>
+
+        <section aria-labelledby="seiten">
+            <h2 id="seiten">Seiten des Webauftritts</h2>
+            <ul>
+                <li><strong>Startseite:</strong> Einstieg und Übersicht zum Fitnessstudio.</li>
+                <li><strong>Angebot:</strong> Trainingsbereiche, Kurse und Mitgliedschaften.</li>
+                <li><strong>Über uns:</strong> Informationen zu fitbbz und dem Standort BBZBL.</li>
+                <li><strong>Kontakt:</strong> Kontaktmöglichkeiten und Probetraining-Anfrage.</li>
+                <li><strong>Lernjournal:</strong> Planung, Ressourcen und Kompetenzentwicklung.</li>
+            </ul>
+        </section>
+
+        <article aria-labelledby="begruendung">
+            <h2 id="begruendung">Begründung der HTML-Struktur</h2>
+            <p>
+                Die Seite verwendet <code>header</code>, <code>nav</code>, <code>main</code>,
+                <code>section</code>, <code>article</code> und <code>footer</code>, weil ein Fitnessstudio
+                verschiedene Inhaltsbereiche wie Angebot, Standort und Kontakt klar trennen muss.
+            </p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 fitbbz - Standort BBZBL</p>
+    </footer>
+</body>
+</html>

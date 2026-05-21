@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontaktseite von fitbbz fuer Fragen und Probetraining am Standort BBZBL.">
+    <meta name="author" content="Batuhan">
+    <title>fitbbz | Kontakt</title>
+</head>
+<body>
+    <header>
+        <h1>Kontakt</h1>
+        <p>Fragen stellen oder ein Probetraining bei fitbbz anfragen.</p>
+
+        <nav aria-label="Hauptnavigation">
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="trainingsangebot.html">Trainingsangebot</a></li>
+                <li><a href="studio.html">Studio</a></li>
+                <li><a href="probetraining.html">Probetraining</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="kontaktformular">
+            <h2 id="kontaktformular">Kontaktformular</h2>
+            <p>
+                Das Formular ist noch nicht mit einem Server verbunden. Es zeigt, wie eine Anfrage fuer
+                ein Probetraining oder eine Mitgliedschaft mit passenden HTML-Elementen aufgebaut wird.
+            </p>
+
+            <!-- form, label und input verbessern Struktur, Bedienbarkeit und Barrierefreiheit. -->
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Persoenliche Angaben</legend>
+
+                    <p>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" autocomplete="name" required>
+                    </p>
+
+                    <p>
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Nachricht</legend>
+
+                    <p>
+                        <label for="thema">Thema</label>
+                        <select id="thema" name="thema">
+                            <option value="probetraining">Probetraining</option>
+                            <option value="mitgliedschaft">Mitgliedschaft</option>
+                            <option value="kurs">Kursangebot</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="nachricht">Nachricht</label>
+                        <textarea id="nachricht" name="nachricht" rows="6" required></textarea>
+                    </p>
+                </fieldset>
+
+                <button type="submit">Absenden</button>
+            </form>
+        </section>
+
+        <section aria-labelledby="standort">
+            <h2 id="standort">Standort</h2>
+            <address>
+                fitbbz<br>
+                Standort BBZBL<br>
+                4132 Muttenz
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 fitbbz - Standort BBZBL</p>
+    </footer>
+</body>
+</html>

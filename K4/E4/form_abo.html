@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Grundlegende Metadaten: Zeichensatz, responsive Darstellung und Seitenbeschreibung. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mitgliedschaftsformular von fitbbz mit verschiedenen HTML-Formularelementen.">
+    <meta name="author" content="Batuhan">
+    <title>fitbbz | Mitgliedschaft</title>
+</head>
+<body>
+<!-- header kennzeichnet den sichtbaren Kopfbereich der Website. -->
+<header>
+    <h1>Mitgliedschaft</h1>
+    <p>Mitgliedschaft bei fitbbz beantragen und Trainingswunsch erfassen.</p>
+
+    <img src="../../assets/fitbbz.png" alt="fitbbz" height="200" width="320">
+
+
+    <nav aria-label="Hauptnavigation">
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="trainingsangebot.html">Trainingsangebot</a></li>
+            <li><a href="studio.html">Studio</a></li>
+            <li><a href="probetraining.html">Probetraining</a></li>
+            <li><a href="form_abo.html">Mitgliedschaft</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+<!-- main enthält den einzigartigen Hauptinhalt dieser Seite. -->
+<main>
+
+    <section aria-labelledby="mitgliedschaftsformular">
+        <h2 id="mitgliedschaftsformular">Mitgliedschaftsformular</h2>
+
+        <form action="https://gibm.becknet.ch/formular/formular.php" method="post">
+            <fieldset>
+                <legend>Persönliche Angaben</legend>
+
+                <p>
+                    <label for="vorname">Vorname</label>
+                    <input type="text" id="vorname" name="vorname" placeholder="Max" minlength="2" maxlength="40" size="25" required autofocus>
+                </p>
+
+                <p>
+                    <label for="nachname">Nachname</label>
+                    <input type="text" id="nachname" name="nachname" placeholder="Muster" minlength="2" maxlength="40" size="25" required>
+                </p>
+
+                <p>
+                    <label for="geburtsdatum">Geburtsdatum</label>
+                    <input type="date" id="geburtsdatum" name="geburtsdatum" min="1940-01-01" max="2010-12-31" required>
+                </p>
+
+                <p>
+                    <label for="alter">Alter</label>
+                    <input type="number" id="alter" name="alter" min="16" max="90" placeholder="18" required>
+                </p>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Kontakt und Login</legend>
+
+                <p>
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" name="email" placeholder="name@example.com" autocomplete="email" required>
+                </p>
+
+                <p>
+                    <label for="telefon">Telefon</label>
+                    <input type="tel" id="telefon" name="telefon" placeholder="+41 79 123 45 67" pattern="^\+?[0-9 ]{7,20}$" required>
+                </p>
+
+                <p>
+                    <label for="webseite">Eigene Webseite oder Social-Media-Profil</label>
+                    <input type="url" id="webseite" name="webseite" placeholder="https://example.com">
+                </p>
+
+                <p>
+                    <label for="passwort">Passwort</label>
+                    <input type="password" id="passwort" name="passwort" minlength="8" maxlength="30" placeholder="Mindestens 8 Zeichen" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Mitgliedschaft und Training</legend>
+
+                <p>
+                    <label for="mitgliedschaft">Mitgliedschaftstyp</label>
+                    <select id="mitgliedschaft" name="mitgliedschaft" required>
+                        <option value="">Bitte wählen</option>
+                        <option value="basis">Basis</option>
+                        <option value="standard">Standard</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                </p>
+
+                <p>Gewünschte Zahlungsart</p>
+                <p>
+                    <input type="radio" id="monatlich" name="zahlung" value="monatlich" required>
+                    <label for="monatlich">Monatlich</label>
+                </p>
+                <p>
+                    <input type="radio" id="halbjaehrlich" name="zahlung" value="halbjaehrlich">
+                    <label for="halbjaehrlich">Halbjährlich</label>
+                </p>
+                <p>
+                    <input type="radio" id="jaehrlich" name="zahlung" value="jaehrlich">
+                    <label for="jaehrlich">Jährlich</label>
+                </p>
+
+                <p>Trainingsziele</p>
+                <p>
+                    <input type="checkbox" id="kraft" name="ziele[]" value="kraft">
+                    <label for="kraft">Kraft aufbauen</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="ausdauer" name="ziele[]" value="ausdauer">
+                    <label for="ausdauer">Ausdauer verbessern</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="beweglichkeit" name="ziele[]" value="beweglichkeit">
+                    <label for="beweglichkeit">Beweglichkeit verbessern</label>
+                </p>
+
+                <p>
+                    <label for="trainingszeit">Bevorzugte Trainingszeit</label>
+                    <input type="time" id="trainingszeit" name="trainingszeit" value="18:00">
+                </p>
+
+                <p>
+                    <label for="startmonat">Gewünschter Startmonat</label>
+                    <input type="month" id="startmonat" name="startmonat" required>
+                </p>
+
+                <p>
+                    <label for="motivation">Motivation</label>
+                    <textarea id="motivation" name="motivation" rows="6" cols="45" minlength="20" maxlength="500" placeholder="Beschreibe kurz, weshalb du trainieren möchtest." required></textarea>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Weitere Angaben</legend>
+
+                <p>
+                    <label for="lieblingsfarbe">Farbe für Mitgliedskarte</label>
+                    <input type="color" id="lieblingsfarbe" name="lieblingsfarbe" value="#1f7a5c">
+                </p>
+
+                <p>
+                    <label for="erfahrung">Trainingserfahrung von 1 bis 10</label>
+                    <input type="range" id="erfahrung" name="erfahrung" min="1" max="10" value="5">
+                </p>
+
+                <p>
+                    <label for="promo">Promocode</label>
+                    <input type="text" id="promo" name="promo" value="SCHULE2026" disabled>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="agb" name="agb" value="akzeptiert" required>
+                    <label for="agb">Ich akzeptiere die Mitgliedschaftsbedingungen.</label>
+                </p>
+            </fieldset>
+
+            <p>
+                <button type="submit">Mitgliedschaft absenden</button>
+                <button type="reset">Formular zurücksetzen</button>
+            </p>
+        </form>
+    </section>
+
+
+</main>
+
+<footer>
+    <p>&copy; 2026 fitbbz - Standort BBZBL</p>
+</footer>
+</body>
+</html>

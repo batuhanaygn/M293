@@ -72,7 +72,6 @@ hr {
     background-color: var(--hauptfarbe);
     border: none;
     border-radius: 3px;
-    opacity: 0.6;
 }
 
 /* Navigation */
@@ -371,60 +370,4 @@ nav li a:hover {
     color: white;
     background-color: var(--hauptfarbe);
     transition: background-color 0.3s;
-}
-
-/* Handy */
-
-@media (max-width: 800px) {
-    nav {
-        position: static;
-        padding: 20px;
-    }
-
-    nav ul {
-        flex-wrap: wrap;
-    }
-
-    .main-content {
-        width: 95%;
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 56px;
-        margin-left: 15px;
-    }
-
-    h2,
-    p,
-    .iconbutton,
-    .kontakt-links,
-    .studio-list,
-    .meinung p {
-        margin-left: 15px;
-    }
-
-    .hero,
-    .zahlen,
-    .price-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .training-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .training-card.top {
-        grid-column: span 2;
-    }
-}
-
-@media (max-width: 500px) {
-    .training-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .training-card.top {
-        grid-column: span 1;
-    }
 }

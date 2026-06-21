@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M293 | Übersicht</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap');
+
+        :root {
+            --hauptfarbe: #e50914;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', Arial, sans-serif;
+            color: #222222;
+            background: linear-gradient(0.25turn, #ffe8ea 8%, #ffffff 90%);
+            padding-bottom: 50px;
+        }
+
+        .main-content {
+            width: 80%;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 80px;
+            margin: 0 0 10px;
+            color: var(--hauptfarbe);
+        }
+
+        h2 {
+            font-size: 38px;
+            margin-top: 55px;
+            color: #111111;
+        }
+
+        p {
+            font-size: 22px;
+            line-height: 1.6;
+        }
+
+        .logo-box {
+            margin-top: 25px;
+            padding: 30px;
+            background-color: white;
+            border-left: 5px solid var(--hauptfarbe);
+            border-radius: 14px;
+        }
+
+        .logo-box img {
+            width: 260px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .seiten-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+            margin-top: 25px;
+        }
+
+        .seite-card {
+            padding: 24px;
+            background-color: white;
+            border-left: 5px solid var(--hauptfarbe);
+            border-radius: 14px;
+        }
+
+        .seite-card h3 {
+            margin-top: 0;
+            font-size: 26px;
+        }
+
+        .seite-card p {
+            margin: 0 0 18px;
+            font-size: 18px;
+            color: #555555;
+        }
+
+        .iconbutton {
+            display: inline-block;
+            padding: 10px 15px;
+            color: #111111;
+            font-size: 18px;
+            font-weight: 900;
+            text-decoration: none;
+            background-color: white;
+            border: 2px solid var(--hauptfarbe);
+            border-radius: 30px;
+        }
+
+        .iconbutton:hover {
+            color: white;
+            background-color: var(--hauptfarbe);
+            transition: background-color 0.4s;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 18px;
+            text-align: center;
+            background-color: #f1f1f1;
+            border-top: 1px solid #cccccc;
+        }
+
+        @media (max-width: 1024px) {
+            .main-content {
+                width: 90%;
+            }
+
+            .seiten-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 52px;
+            }
+
+            .seiten-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main class="main-content">
+
+    <header>
+        <h1>M293</h1>
+        <p>Übersicht über die HTML-Seiten aus den einzelnen Ordnern.</p>
+    </header>
+
+    <section>
+        <h2>Logo</h2>
+
+        <div class="logo-box">
+            <img src="assets/fitbbz.png" alt="fitbbz Logo">
+        </div>
+    </section>
+
+    <section>
+        <h2>Seiten</h2>
+
+        <div class="seiten-grid">
+
+            <article class="seite-card">
+                <h3>K3</h3>
+                <p>Startseite fitbbz</p>
+                <a class="iconbutton" href="K3/E3/index.html">Seite öffnen</a>
+            </article>
+
+            <article class="seite-card">
+                <h3>K3 Probetraining</h3>
+                <p>Probetraining-Seite</p>
+                <a class="iconbutton" href="K3/E3/probetraining.html">Seite öffnen</a>
+            </article>
+
+            <article class="seite-card">
+                <h3>K3 Studio</h3>
+                <p>Studio-Seite</p>
+                <a class="iconbutton" href="K3/E3/studio.html">Seite öffnen</a>
+            </article>
+
+            <article class="seite-card">
+                <h3>K3 Trainingsangebot</h3>
+                <p>Trainingsangebot-Seite</p>
+                <a class="iconbutton" href="K3/E3/trainingsangebot.html">Seite öffnen</a>
+            </article>
+
+            <article class="seite-card">
+                <h3>K4</h3>
+                <p>Abo-Formular</p>
+                <a class="iconbutton" href="K4/E4/form_abo.html">Seite öffnen</a>
+            </article>
+
+            <article class="seite-card">
+                <h3>K5</h3>
+                <p>HTML-Seite</p>
+                <a class="iconbutton" href="K5/E5/index.html">Seite öffnen</a>
+            </article>
+
+            <article class="seite-card">
+                <h3>K6</h3>
+                <p>HTML-Seite</p>
+                <a class="iconbutton" href="K6/E6/index.html">Seite öffnen</a>
+            </article>
+
+            <article class="seite-card">
+                <h3>K7</h3>
+                <p>HTML-Seite</p>
+                <a class="iconbutton" href="K7/E7/index.html">Seite öffnen</a>
+            </article>
+
+            <article class="seite-card">
+                <h3>K8</h3>
+                <p>HTML-Seite</p>
+                <a class="iconbutton" href="K8/E8/index.html">Seite öffnen</a>
+            </article>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    © 2026 M293 | Batuhan
+</footer>
+
+</body>
+</html>

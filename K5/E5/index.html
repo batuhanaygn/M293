@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Medien und Links für den fitbbz Webauftritt.">
+    <meta name="author" content="Batuhan">
+    <title>fitbbz | Medien und Links E5</title>
+</head>
+<body>
+<header>
+    <h1>Medien und Links E5</h1>
+    <p>Lokale und externe Medien im fitbbz Webauftritt.</p>
+
+    <nav aria-label="Hauptnavigation">
+        <ul>
+            <li><a href="index.html">Medien und Links</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section aria-labelledby="lokale-medien">
+        <h2 id="lokale-medien">Lokale Medien</h2>
+        <p>
+            Das Logo wird lokal aus dem Projektordner eingebunden. Dadurch ist es unabhängig von
+            externen Servern und passt als Layoutbild gut zum Webauftritt.
+        </p>
+        <figure>
+            <img src="../../assets/fitbbz.png" alt="Logo von fitbbz" width="320" height="200">
+            <figcaption>Lokales PNG-Bild aus dem Ordner assets.</figcaption>
+        </figure>
+    </section>
+
+    <section aria-labelledby="externe-medien">
+        <h2 id="externe-medien">Externe Medien</h2>
+        <p>
+            Externe Medien sparen Speicherplatz im eigenen Projekt, sind aber von der Verfügbarkeit
+            des jeweiligen Dienstleisters abhängig.
+        </p>
+
+        <article aria-labelledby="audio">
+            <h3 id="audio">Audio</h3>
+            <p>
+                Die Audiodatei wird von MDN geladen und mit dem HTML-Element
+                <code>audio</code> eingebunden.
+            </p>
+            <audio controls>
+                <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3" type="audio/mpeg">
+                Ihr Browser unterstützt das Audio-Element nicht.
+            </audio>
+        </article>
+
+        <article aria-labelledby="youtube-video">
+            <h3 id="youtube-video">YouTube-Video</h3>
+            <p>
+                Das Video wird per <code>iframe</code> von YouTube eingebunden. Es ist kein lokaler
+                Speicherplatz nötig, dafür wird eine Verbindung zu YouTube aufgebaut.
+            </p>
+            <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/ml6cT4AZdqI"
+                    title="YouTube-Video: Fitness Training"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+            </iframe>
+        </article>
+
+        <article aria-labelledby="karte">
+            <h3 id="karte">Google Maps</h3>
+            <p>
+                Die Karte zeigt den Standort BBZBL über Google Maps. Karten sind als externer Dienst
+                praktisch, weil Zoom, Navigation und aktuelle Kartendaten bereits enthalten sind.
+            </p>
+            <iframe
+                    src="https://www.google.com/maps?q=BBZBL%20Muttenz&output=embed"
+                    width="560"
+                    height="315"
+                    title="Google Maps Karte zum BBZBL Standort"
+                    loading="lazy">
+            </iframe>
+        </article>
+    </section>
+
+    <section aria-labelledby="links">
+        <h2 id="links">Korrekte Verlinkung</h2>
+        <p>
+            Interne Links in der Navigation sind relative Links. Externe Seiten werden in einem neuen
+            Fenster geöffnet.
+        </p>
+        <ul>
+            <li>
+                <a href="https://www.bbzbl.ch/" target="_blank" rel="noopener">
+                    Externer Link zur BBZBL-Website
+                </a>
+            </li>
+            <li>
+                <a href="mailto:info@fitbbz.ch">info@fitbbz.ch</a>
+            </li>
+            <li>
+                <a href="tel:+41615551234">+41 61 555 12 34</a>
+            </li>
+        </ul>
+    </section>
+
+    <section aria-labelledby="formate">
+        <h2 id="formate">Formate, Grösse und Bewertung</h2>
+        <table>
+            <caption>Vergleich der eingebundenen Medien</caption>
+            <thead>
+            <tr>
+                <th scope="col">Medium</th>
+                <th scope="col">Format / Codec</th>
+                <th scope="col">Grösse / Gewicht</th>
+                <th scope="col">Begründung</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">Lokales Logo</th>
+                <td>PNG, Rastergrafik</td>
+                <td>320 x 200 Pixel angezeigt, Datei ca. 912 KB</td>
+                <td>
+                    PNG eignet sich für Logos und Grafiken mit klaren Kanten. Die Datei ist lokal
+                    verfügbar, aber grösser als ein optimiertes WebP oder SVG.
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Audio</th>
+                <td>MP3, MPEG Audio</td>
+                <td>Externe Datei, Gewicht wird vom Dienstleister geladen</td>
+                <td>
+                    MP3 wird von sehr vielen Browsern unterstützt und ist für kurze Audiodateien
+                    geeignet. Nachteil ist die verlustbehaftete Kompression.
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">YouTube-Video</th>
+                <td>MP4/WebM je nach Browser, meist H.264 oder VP9</td>
+                <td>Streaming, keine lokale Videodatei im Projekt</td>
+                <td>
+                    YouTube wählt Container, Codec und Auflösung automatisch. Das spart Speicher,
+                    macht die Seite aber abhängig von YouTube und externen Cookies.
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Google Maps</th>
+                <td>HTML-iframe mit Kartendaten</td>
+                <td>Externe Daten, Grösse dynamisch</td>
+                <td>
+                    Die Karte ist aktuell und interaktiv. Der Nachteil ist, dass externe Daten
+                    geladen werden und eine Internetverbindung nötig ist.
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 fitbbz - Standort BBZBL</p>
+</footer>
+</body>
+</html>

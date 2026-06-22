@@ -75,38 +75,39 @@ hr {
 }
 
 /* Navigation */
-
 nav {
     position: absolute;
     top: 20px;
     right: 20px;
-}
 
-nav ul {
-    display: flex;
-    gap: 10px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+    ul {
+        display: flex;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
 
-nav li a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 15px;
-    color: #111111;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    background-color: white;
-    border: 1px solid var(--hauptfarbe);
-    border-radius: 30px;
-}
+    li {
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            color: #111111;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: white;
+            border: 1px solid var(--hauptfarbe);
+            border-radius: 30px;
 
-nav li a:hover {
-    color: white;
-    background-color: var(--hauptfarbe);
-    transition: background-color 0.4s;
+            &:hover {
+                color: white;
+                background-color: var(--hauptfarbe);
+                transition: background-color 0.4s;
+            }
+        }
+    }
 }
 
 /* Hero */
